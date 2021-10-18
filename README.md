@@ -13,8 +13,8 @@ CREATE TABLE [dbo].[PRODUTOS]
 (
 		[ID_PRODUTO] INTEGER  PRIMARY KEY IDENTITY(1,1),
 		[NOME] VARCHAR(40) NOT NULL,
-    [DESCRICAO] VARCHAR(250) NOT NULL,
-	  [QUANTIDADE] INTEGER NOT NULL,
+   		[DESCRICAO] VARCHAR(250) NOT NULL,
+	  	[QUANTIDADE] INTEGER NOT NULL,
 		[PRECO] [DECIMAL](10,2) NOT NULL
 )
 ```
@@ -96,7 +96,7 @@ CREATE TABLE [dbo].[PRODUTOS]
 
 ```powershell
 PM> cd nomedoprojeto
-PM> Scaffold-dbContext "Data Source=.\\SQLExpress;Initial 
+PM> Scaffold-dbContext "Data Source=.\SQLExpress;Initial 
 Catalog=SISTEMAWEB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer 
 -OutputDir Models
 ```
